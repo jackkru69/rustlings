@@ -26,13 +26,13 @@ pub enum Command {
     Append(usize),
 }
 
-mod my_module {
+mod string_util {
     use super::Command;
 
     // TODO: Complete the function signature!
-    pub fn transformer(input: ???) -> ??? {
+    pub fn transformer(input: Vec<(U, Command)>) -> String {
         // TODO: Complete the output declaration!
-        let mut output: ??? = vec![];
+        let mut output: Vec<(U, Command)> = vec![];
         for (string, command) in input.iter() {
             // TODO: Complete the function body. You can do it!
         }
@@ -43,8 +43,8 @@ mod my_module {
 #[cfg(test)]
 mod tests {
     // TODO: What to we have to import to have `transformer` in scope?
-    use ???;
     use super::Command;
+    use string_util;
 
     #[test]
     fn it_works() {
